@@ -11,6 +11,7 @@ $week = 3;
 <body>
 
     <h1>Creating Week <?php echo $week; ?> Branch</h1>
+    <p>Successfully created a paragraph</p>
 
 </body>
 </html>
