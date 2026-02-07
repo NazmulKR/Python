@@ -20,4 +20,9 @@ echo "10"+ $b;// Type Juggling
  if ($a != $c) {
     echo "This stat3ement is True";
  } //Condioinal
+ if ($b != $c and $a == $b) {
+    echo "This statement is true";
+ } else  {
+    echo "This is not true";
+ }
 ?>
