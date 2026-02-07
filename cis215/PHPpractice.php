@@ -31,5 +31,8 @@ echo "10"+ $b;// Type Juggling
  $result = match ($color) {
     "yellow" => "Hey",
     "red"=> "GO",
-    "blue"=> "True", //Match Condition
+    "blue"=> "True", 
+    }; 
+    echo $result;
+    //Match Condition
 ?>
