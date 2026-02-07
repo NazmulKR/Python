@@ -1,4 +1,6 @@
 <?php
+
+use LDAP\Result;
 $a = 2;
 $b = 2;
 
@@ -25,4 +27,9 @@ echo "10"+ $b;// Type Juggling
  } else  {
     echo "This is not true"; // If else if conditional
  }
+ $color ="blue";
+ $result = match ($color) {
+    "yellow" => "Hey",
+    "red"=> "GO",
+    "blue"=> "True", //Match Condition
 ?>
