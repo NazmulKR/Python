@@ -20,13 +20,13 @@ echo "10"+ $b;// Type Juggling
  if ($a != $c) {
     echo "This stat3ement is True";
  } //Condioinal
- echo "<br>"
- if ($b != $c and $a == $b) {
+ echo "<br>";
+ if ($b != $c && $a == $b) {
     echo "This statement is true";
  } else  {
     echo "This is not true"; // If else if conditional
  }
-  echo "<br>"
+  echo "<br>";
  $color ="blue";
  $result = match ($color) {
     "yellow" => "Hey",
