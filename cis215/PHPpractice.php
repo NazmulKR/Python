@@ -23,6 +23,6 @@ echo "10"+ $b;// Type Juggling
  if ($b != $c and $a == $b) {
     echo "This statement is true";
  } else  {
-    echo "This is not true";
+    echo "This is not true"; // If else if conditional
  }
 ?>
