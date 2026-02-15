@@ -117,7 +117,7 @@ function fizzbuzz($n) {
             echo "Buzz ";
         }
 
-        // Otherwise just print the number
+        // Otherwise just print the numbers
         else {
             echo $i . " ";
         }
