@@ -14,7 +14,7 @@ $q4 = isset($_POST['q4']) ? $_POST['q4'] : "";
 
 $hasError = false;
 
-if ($q1 == "" || $q2 == "" || $q3 == "" || $q4 == "") {
+if (empty($q1) || empty($q2) || empty($q3) || empty($q4)) {
     $hasError = true;
 }
 ?>
@@ -64,8 +64,9 @@ if ($score <= 1) {
 
 <p>
     <a href="car_quiz.php">
-        <button type='button'>Back to Quiz</button>
+         <button type='button'>Back to Quiz</button>
     </a>
+
 </p>
 
 </body>
