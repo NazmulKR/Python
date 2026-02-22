@@ -65,6 +65,8 @@ The user answers questions about cars amd answers sent to car_results.php file
         <input type="radio" name="q4" value="electric">
         Electric
     </label>
+    <br>
+    <button type="submit">Submit</button>
      </form>
 
 </body>
