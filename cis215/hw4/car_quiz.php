@@ -17,7 +17,7 @@ The user answers questions about cars amd answers sent to car_results.php file
 <body>
     <h1>Car Personality Quiz</h1>
     <p>Answer the questions below and let us know what type of car person you are</p>
-     <form action="Car_results.php" method="POST">
+     <form action="car_results.php" method="POST">
         <h3>1. Which car brand do you like most?</h3>
         <label>
             <input type="radio" name="q1" value="toyota">
