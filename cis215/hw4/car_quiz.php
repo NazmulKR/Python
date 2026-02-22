@@ -50,6 +50,21 @@ The user answers questions about cars amd answers sent to car_results.php file
         <input type="radio" name="q3" value="manual">
         Manual
     </label><br>
+    <h3>
+        4. What type of fuel do you prefer?
+    </h3>
+    <label>
+        <input type="radio" name="q3" value="gas">
+        Gasoline
+    </label><br>
+    <label>
+        <input type="radio" name="q4" value="hybrid">
+        Hybrid
+    </label><br>
+    <label>
+        <input type="radio" name="q4" value="electric">
+        Electric
+    </label>
      </form>
 
 </body>
