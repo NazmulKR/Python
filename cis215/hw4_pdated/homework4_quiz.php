@@ -45,10 +45,17 @@ The user answers questions about games and answers sent to homework4_results.php
                 </select>
             </div>
           </fieldset>
+          <fieldset>
+            <legend>4. Type your favorite video game character</legend>
+            <div>
+                <label for="q4-text">Character:</label> 
+                <input type="text" name="q4" id="q4-text">
+            </div>
+          </fieldset>
 
-
-
-
+          <div>
+                 <button type="submit" name="submit-button" id="submit-id">Submit</button>
+          </div>
         </form>
     </main>
 </body>
