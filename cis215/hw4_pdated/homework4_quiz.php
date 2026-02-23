@@ -13,7 +13,7 @@ The user answers questions about games and answers sent to homework4_results.php
 </head>
 <body>
     <main>
-        <form action="homeowork4_results.php" method="POST">
+        <form action="homework4_results.php" method="POST">
           <fieldset>
             <legend>1. What is your favorite game genre?</legend>
             <div> <input type="radio" name="q1" id="q1-action" value="action"> <label for="q1-action">Action</label> </div>
