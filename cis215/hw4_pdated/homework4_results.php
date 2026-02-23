@@ -21,6 +21,10 @@ This file recieves the data entered by the user by the form
                     echo"<h2>Error</h2>";
                     echo"<p>You must answer all questions.</p>";
                     echo "<p> <a href=\"homework4_quiz.php\">Go back</a><p>";
+                    return;
+                }
+            }
+         }
 
         ?>
     </main>
