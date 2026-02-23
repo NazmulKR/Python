@@ -25,8 +25,37 @@ This file recieves the data entered by the user by the form
                 }
             }
          }
+         function score_quiz(){
+             $score = 0; 
+             if($_POST["q1"] === "action"){ $score++; } 
+             if($_POST["q2"] === "plan"){ $score++; } 
+             if($_POST["q3"] === "magic"){ $score++; }
 
-        ?>
+             $char = strtolower(trim($_POST["q4"]));
+              if($char !== ""){ $score++; } 
+              
+              return $score;
+         }
+         function main(){ 
+            check_required(["q1","q2","q3","q4"]);
+         if(!isset($_POST["q1"]) || !isset($_POST["q2"]) || !isset($_POST["q3"]) || !isset($_POST["q4"])){ 
+            return;
+         }
+         
+         $score = score_quiz();
+         echo "<h1>Your Score: $score / 4</h1>";
+         if($score <= 1){ 
+            echo "<p>You are a Casual Player — you play for fun and vibes.</p>";
+         }
+         elseif($score <= 3){ 
+            echo "<p>You are a Skilled Adventurer — balanced and strategic.</p>";
+         } else{ 
+            echo "<p>You are a Hardcore Gamer — fearless, focused, unstoppable.</p>";
+         }
+       echo '<p><a href="homework4_quiz.php">Back to Quiz</a></p>'; 
+         }
+         main();
+       ?>
     </main>
     
 </body>
