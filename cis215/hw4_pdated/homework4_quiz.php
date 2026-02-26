@@ -28,9 +28,10 @@ The user answers questions about games and answers sent to homework4_results.php
             <div><input type="radio" name="q2" id="q2-plan" value="plan"> <label for="q2-plan">Study patterns and plan</label></div>
           </fieldset>
           <fieldset>
+            <legend><label for="q3-select">Choose your favorite in-game item:</label></legend>
              
             <div>
-                <label for="q3-select">Choose your favorite in-game item:</label>
+                
                 <select name="q3" id="q3-select">
                     <option value="default">-- Select an item --</option>
                     <optgroup label="Common Items">
