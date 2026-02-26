@@ -13,6 +13,9 @@ The user answers questions about games and answers sent to homework4_results.php
 </head>
 <body>
     <main>
+        <h1>
+           Video Game Personality Quiz
+        </h1>
         <form action="homework4_results.php" method="POST">
           <fieldset>
             <legend>1. What is your favorite game genre?</legend>
