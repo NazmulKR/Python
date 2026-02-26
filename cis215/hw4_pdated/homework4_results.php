@@ -15,46 +15,40 @@ This file recieves the data entered by the user by the form
 <body>
     <main>
         <?php
-         function check_required($list) {
-            foreach ($list as $items) {
-                if (!isset($_POST[$items]) and $_POST[$items] ==="") {
-                    echo"<h2>Error</h2>";
-                    echo"<p>You must answer all questions.</p>";
-                    echo "<p> <a href=\"homework4_quiz.php\">Go back</a><p>";
-                    return;
-                }
-            }
-         }
-         function score_quiz(){
-             $score = 0; 
-             if($_POST["q1"] === "action"){ $score++; } 
-             if($_POST["q2"] === "plan"){ $score++; } 
-             if($_POST["q3"] === "magic"){ $score++; }
-
-             $char = strtolower(trim($_POST["q4"]));
-              if($char !== ""){ $score++; } 
-              
-              return $score;
-         }
-         function main(){ 
-            check_required(["q1","q2","q3","q4"]);
-         if(!isset($_POST["q1"]) || !isset($_POST["q2"]) || !isset($_POST["q3"]) || !isset($_POST["q4"])){ 
-            return;
-         }
-         
-         $score = score_quiz();
-         echo "<h1>Your Score: $score / 4</h1>";
-         if($score <= 1){ 
-            echo "<p>You are a Casual Player — you play for fun and vibes.</p>";
-         }
-         elseif($score <= 3){ 
-            echo "<p>You are a Skilled Adventurer — balanced and strategic.</p>";
-         } else{ 
-            echo "<p>You are a Hardcore Gamer — fearless, focused, unstoppable.</p>";
-         }
-       echo '<p><a href="homework4_quiz.php">Back to Quiz</a></p>'; 
-         }
-         main();
+        $q1= $_POST["q1"];
+        $q2= $_POST["q2"];
+        $q3= $_POST["q3"];
+        $q4= $_POST["q4"];
+        
+if ($q1 ==="" or $q1 ==="" or $q3 ==="default" or $q4 ==="") {
+   echo"<h2>Error</h2>";
+   echo"<p> Please answer all of the question to get the results of the quiz";
+   echo "<a href=\"homework4_quiz.php\"> Back to Quiz</a></p>";
+} else {
+   $score =0;
+   if ($q1 === "action") {
+      $score = $score + 1;
+   }
+   if ($q2 === "plan") {
+      $score = $score + 1;
+   }
+   if ($q3 === "magic") {
+      $score = $score + 1;
+   }
+   if ($q4 !== "") {
+      $score = $score + 1;
+   }
+   echo "<h1>Your Score: $score / 4</h1>";
+   if ($score <=1) {
+      echo "<p>You are a casual gamer. You play for fun</p>";
+   } else if ($score <=3){
+      echo "<p>You are a skilled adventurer</p>";
+   } else {
+      echo "You are a harcore gamer";
+   }
+   echo '<p><a href="homework4_quiz.php">Back to Quiz</a></p>';
+}
+   
        ?>
     </main>
     
