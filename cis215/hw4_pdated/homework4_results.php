@@ -20,9 +20,9 @@ This file recieves the data entered by the user by the form
         $q3= $_POST["q3"];
         $q4= $_POST["q4"];
         
-if ($q1 ==="" or $q1 ==="" or $q3 ==="default" or $q4 ==="") {
+if ($q1 ==="" or $q2 ==="" or $q3 ==="default" or $q4 ==="") {
    echo"<h2>Error</h2>";
-   echo"<p> Please answer all of the question to get the results of the quiz";
+   echo"<p> Please answer all of the question to get the results of the quiz.";
    echo "<a href=\"homework4_quiz.php\"> Back to Quiz</a></p>";
 } else {
    $score =0;
@@ -44,7 +44,7 @@ if ($q1 ==="" or $q1 ==="" or $q3 ==="default" or $q4 ==="") {
    } else if ($score <=3){
       echo "<p>You are a skilled adventurer</p>";
    } else {
-      echo "You are a harcore gamer";
+      echo "<p>You are a harcore gamer</p>";
    }
    echo '<p><a href="homework4_quiz.php">Back to Quiz</a></p>';
 }
