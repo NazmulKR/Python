@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html><head>
-<title>Survey: Survey Name</title>  <!-- TODO: Change "Survey Name" to the topic of your survey -->
+<title>Student Study Habits Survey</title>  <!-- TODO: Change "Survey Name" to the topic of your survey -->
 </head>
 <body>
+    
 
 
-<!-- TODO: Fix all bugs/poor practice in the form -->
-<form action="" method="get" class="survey">
+<form action="process_survey.php" method="post" class="survey">
 
 <label>Enter your email: </label>
 <input type="email" name="email-name" id="email-id">
