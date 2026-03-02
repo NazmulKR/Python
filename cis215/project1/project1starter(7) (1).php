@@ -10,11 +10,16 @@
 
 <form action="process_survey.php" method="post" class="survey">
 
-<label>Enter your email: </label>
-<input type="email" name="email-name" id="email-id">
-
-<label>Enter your password: </label>
-<input type="text" name="pw-name" id="pw-id">
+    <!-- Email -->
+<div>
+    <label for="email">Enter your email:</label>
+        <input type="email" name="email" id="email" required>
+</div>
+ <!-- Survey password (required by project spec, NOT login password) -->
+<div>
+        <label for="survey_password">Enter survey password:</label>
+        <input type="password" name="survey_password" id="survey_password" required>
+    </div>
 
 <label>What age are you? </label>
 <input type="radio" name="0" id="1">
