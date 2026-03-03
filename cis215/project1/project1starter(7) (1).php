@@ -3,8 +3,10 @@
 <title>Student Study Habits Survey</title>  <!-- TODO: Change "Survey Name" to the topic of your survey -->
 </head>
 <body>
-    <h1>Student Study Habits Survey</h1>
+<header>
+        <h1>Student Study Habits Survey</h1>
     <p>Please Complete this survey about your study habits and time management</p>
+</header>
     
 
 
