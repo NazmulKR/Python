@@ -67,7 +67,15 @@
     <h3>Study Habits</h3>
     <div>
         <label for="major">Major / Program</label>
-        <input type
+        <input type="text" id="major" name="major"required>
+    </div>
+    <div>
+        <label for="hours_per_week">Study Hours Per Week:</label>
+        <input type="number" id="hours_per_week" name="hours_per_week" min="0" max="168"required>
+
+    </div>
+    <div>
+        
     </div>
 </div>
 
