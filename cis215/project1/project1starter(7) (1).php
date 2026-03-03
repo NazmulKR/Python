@@ -38,21 +38,21 @@
 
             <div>Age Range</div>
             <div>
-                <label><input type="radio" name="age" value="18-22" required>18-22</label><br>
-                <label><input type="radio" name="age" value="23-27">23-27</label><br>
-                <label><input type="radio" name="age" value="28-32">28-32</label><br>
-                <label><input type="radio" name="age" value="33-37">33-37</label><br>
-                <label><input type="radio" name="age" value="38-42">38-42</label><br>
-                <label><input type="radio" name="age" value="43-47">43-47</label><br>
-                <label><input type="radio" name="age" value="48-52">48-52</label><br>
-                <label><input type="radio" name="age" value="53-57">53-57</label><br>
-                <label><input type="radio" name="age" value="58-62">58-62</label><br>
-                <label><input type="radio" name="age" value="63-67">63-67</label><br>
+                <label><input type="radio" name="age" value="18-22" required>18-22</label>
+                <label><input type="radio" name="age" value="23-27">23-27</label>
+                <label><input type="radio" name="age" value="28-32">28-32</label>
+                <label><input type="radio" name="age" value="33-37">33-37</label>
+                <label><input type="radio" name="age" value="38-42">38-42</label>
+                <label><input type="radio" name="age" value="43-47">43-47</label>
+                <label><input type="radio" name="age" value="48-52">48-52</label>
+                <label><input type="radio" name="age" value="53-57">53-57</label>
+                <label><input type="radio" name="age" value="58-62">58-62</label>
+                <label><input type="radio" name="age" value="63-67">63-67</label>
                 <label><input type="radio" name="age" value="68+">68+</label>
             </div>
 
              <div>
-                <label for="gender">Gender:</label><br>
+                <label for="gender">Gender:</label>
                 <select name="gender" id="gender" required>
                     <option value="">Select...</option>
                     <option value="m">Male</option>
@@ -63,9 +63,13 @@
             </div>
 
 </div>
-
-
-<!-- TODO: Add your own survey questions -->
+<div>
+    <h3>Study Habits</h3>
+    <div>
+        <label for="major">Major / Program</label><br>
+        <input type
+    </div>
+</div>
 
 </form>
 </main>
