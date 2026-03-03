@@ -75,7 +75,18 @@
 
     </div>
     <div>
-
+        Study Methods(Check Any):
+    </div>
+    <div>
+        <label><input type="checkbox" name="study_methods[]" value="reading">Reading textbooks</label>
+                <label><input type="checkbox" name="study_methods[]" value="videos">Watching videos</label>
+                <label><input type="checkbox" name="study_methods[]" value="group">Group study</label>
+                <label><input type="checkbox" name="study_methods[]" value="practice">Practice problems</label>
+                <label><input type="checkbox" name="study_methods[]" value="tutoring">Tutoring / office hours</label>
+    </div>
+    <div>
+        <label for="comments">Comments (Optional):</label>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
     </div>
 </div>
 
