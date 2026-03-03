@@ -15,7 +15,7 @@
 </nav>
     
 
-
+<main>
 <form action="process_survey.php" method="post" class="survey">
 
     <!-- Email -->
@@ -69,6 +69,7 @@
 <!-- TODO: Add your own survey questions -->
 
 </form>
+</main>
 
 <!-- TODO: All the backend PHP/SQL stuff! (you may need a separate file for this!) -->
 
