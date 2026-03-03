@@ -95,7 +95,9 @@
 
 </form>
 </main>
+<footer>
+    <div>&copy; 2026 Student Study Habits Survey</div>
+</footer>
 
-<!-- TODO: All the backend PHP/SQL stuff! (you may need a separate file for this!) -->
-
-</body></html>
+</body>
+</html>
