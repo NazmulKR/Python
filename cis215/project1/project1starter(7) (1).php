@@ -19,14 +19,13 @@
     <h2>Survey Form</h2>
 <form action="process_survey.php" method="post" class="survey">
 
-    <!-- Email -->
+    
 <div>
     <h3> Contact & Access</h3>
    <div>
     <label for="email">Enter your email:</label>
         <input type="email" name="email" id="email" required>
 </div>
- <!-- Survey password (required by project spec, NOT login password) -->
 <div>
         <label for="survey_password">Enter survey password:</label>
         <input type="password" name="survey_password" id="survey_password" required>
