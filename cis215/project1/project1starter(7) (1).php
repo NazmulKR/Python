@@ -89,6 +89,9 @@
         <textarea id="comments" name="comments" placeholder="Write a comment here......" rows="4" cols="40"></textarea>
     </div>
 </div>
+<div>
+    <button type="submit">Submit Survey</button>
+</div>
 
 </form>
 </main>
