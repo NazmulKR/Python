@@ -66,7 +66,7 @@
 <div>
     <h3>Study Habits</h3>
     <div>
-        <label for="major">Major / Program</label>
+        <label for="major">Major / Program:</label>
         <input type="text" id="major" name="major"required>
     </div>
     <div>
@@ -75,7 +75,7 @@
 
     </div>
     <div>
-        
+
     </div>
 </div>
 
