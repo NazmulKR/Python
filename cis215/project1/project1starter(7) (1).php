@@ -16,10 +16,13 @@
     
 
 <main>
+    <h2>Survey Form</h2>
 <form action="process_survey.php" method="post" class="survey">
 
     <!-- Email -->
 <div>
+    <h3> Contact & Access</h3>
+   <div>
     <label for="email">Enter your email:</label>
         <input type="email" name="email" id="email" required>
 </div>
@@ -28,43 +31,39 @@
         <label for="survey_password">Enter survey password:</label>
         <input type="password" name="survey_password" id="survey_password" required>
     </div>
+</div>
+    
+<div>
+    <h3>About You</h3>
 
-<label>What age are you? </label>
-<input type="radio" name="0" id="1">
-<label>0-12 </label>
-<input type="radio" name="1" id="1">
-<label>13-17 </label>
-<input type="radio" name="2" id="1">
-<label>18-22 </label>
-<input type="radio" name="3" id="1">
-<label>23-27 </label>
-<input type="radio" name="4" id="1">
-<label>28-32 </label>
-<input type="radio" name="5" id="1">
-<label>33-37 </label>
-<input type="radio" name="6" id="1">
-<label>38-42 </label>
-<input type="radio" name="7" id="1">
-<label>43-47 </label>
-<input type="radio" name="8" id="1">
-<label>48-52 </label>
-<input type="radio" name="9" id="1">
-<label>53-57 </label>
-<input type="radio" name="10" id="1">
-<label>58-62 </label>
-<input type="radio" name="11" id="1">
-<label>63-67 </label>
-<input type="radio" name="12" id="1">
-<label>68+ </label>
+            <div>Age Range</div>
+            <div>
+                <label><input type="radio" name="age" value="18-22" required>18-22</label><br>
+                <label><input type="radio" name="age" value="23-27">23-27</label><br>
+                <label><input type="radio" name="age" value="28-32">28-32</label><br>
+                <label><input type="radio" name="age" value="33-37">33-37</label><br>
+                <label><input type="radio" name="age" value="38-42">38-42</label><br>
+                <label><input type="radio" name="age" value="43-47">43-47</label><br>
+                <label><input type="radio" name="age" value="48-52">48-52</label><br>
+                <label><input type="radio" name="age" value="53-57">53-57</label><br>
+                <label><input type="radio" name="age" value="58-62">58-62</label><br>
+                <label><input type="radio" name="age" value="63-67">63-67</label><br>
+                <label><input type="radio" name="age" value="68+">68+</label>
+            </div>
 
-<select name="gender" id="gender">
-    <option value="m">Male</option>
-    <option value="f">Female</option>
-    <option value="nb">Nonbinary</option>
-    <option value="gf">Genderfluid</option>
-    <option value="a">Agender</option>
-    <option value="o">Choose not to say/Other</option>
-</select>
+             <div>
+                <label for="gender">Gender:</label><br>
+                <select name="gender" id="gender" required>
+                    <option value="">Select...</option>
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                    <option value="nb">Nonbinary</option>
+                    <option value="o">Other / Prefer not to say</option>
+                </select>
+            </div>
+
+</div>
+
 
 <!-- TODO: Add your own survey questions -->
 
