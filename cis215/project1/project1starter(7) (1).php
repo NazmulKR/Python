@@ -7,6 +7,12 @@
         <h1>Student Study Habits Survey</h1>
     <p>Please Complete this survey about your study habits and time management</p>
 </header>
+<nav>
+    <ul>
+        <li> <a href="project1starter(7)(1).php">Survey Form</a></li>
+        <li> <a href="data.php">View survey data</a></li>
+    </ul>
+</nav>
     
 
 
