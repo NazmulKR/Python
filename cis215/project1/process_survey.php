@@ -122,7 +122,7 @@ if (count($errors) > 0) {
     }
 
     echo "</ul>";
-    echo '<div><a href="project1starter(7) (1).php">Return to Survey</a></div>';
+   echo "<div><a href=\"project1starter(7) (1).php\">Return to Survey</a></div>";
 
 } 
   else {
@@ -156,8 +156,8 @@ if (count($errors) > 0) {
     echo "<li>Comments: " . nl2br(htmlspecialchars($comments)) . "</li>";
     echo "</ul>";
 
-    echo '<div><a href="project1starter(7) (1).php">Submit Again</a></div>';
-    echo '<div><a href="data.php">View Data</a></div>';
+    echo "<div><a href=\"project1starter(7) (1).php\">Submit Again</a></div>";
+     echo "<div><a href=\"data.php\">View Data</a></div>";
 }
 ?>
 
