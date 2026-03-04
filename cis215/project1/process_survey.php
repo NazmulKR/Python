@@ -16,7 +16,7 @@ if (empty($_POST["study_methods"])) {
     $study_methods = $_POST["study_methods"];
 }
 
-
+$HASH = '$2y$10$86U6eOu77G6diGRvy42YhuwJyVohlGz6MvB5mamDLgJQSQXmdr3ce';
 
 
 
