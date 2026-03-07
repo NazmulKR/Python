@@ -9,5 +9,9 @@ This file demonstrates CRUD operations using SQL.
 include("dbconfig.php");
 $db = connectDB();
 
+echo "<h1>Movie Database</h1>";
+
+
+
 
 ?>
