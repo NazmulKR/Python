@@ -22,6 +22,7 @@ release_year INT
 
 $db->query($sql_create);
 
+echo "<h2>Table Created</h2>";
 
 
 
