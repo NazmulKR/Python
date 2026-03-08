@@ -10,7 +10,7 @@ include("dbconfig.php");
 $db = connectDB();
 
 // Creating Table named movies with columns named title rating runtime director and release_year.
-$db->query("CREATE TABLE  movies (
+$db->query("CREATE TABLE IF NOT EXISTS  movies (
     id INT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(100),
     rating INT,
