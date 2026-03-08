@@ -45,4 +45,10 @@ foreach ($movies as $row) {
 
 echo "<h2>Movies With Rating 9 or Higher</h2>";
 
+$result = $db->query("SELECT * FROM movies WHERE rating >= 9");
+$movies = $result->fetchAll();
+
+foreach ($movies as $row) {
+    echo $row["title"] . "<br>";
+}
 ?>
