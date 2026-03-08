@@ -19,6 +19,22 @@ director VARCHAR(100),
 release_year INT
 )";
 
+$db->query("INSERT INTO movies (title, rating, runtime, director, release_year)
+VALUES ('The Matrix', 9, 136, 'Wachowski', 1999)");
+
+$db->query("INSERT INTO movies (title, rating, runtime, director, release_year)
+VALUES ('Avatar', 8, 162, 'James Cameron', 2009)");
+
+$db->query("INSERT INTO movies (title, rating, runtime, director, release_year)
+VALUES ('Titanic', 9, 195, 'James Cameron', 1997)");
+
+$db->query("INSERT INTO movies (title, rating, runtime, director, release_year)
+VALUES ('Inception', 9, 148, 'Christopher Nolan', 2010)");
+
+$db->query("INSERT INTO movies (title, rating, runtime, director, release_year)
+VALUES ('The Matrix', 9, 136, 'Wachowski', 1999)");
+
+
 
 
 
