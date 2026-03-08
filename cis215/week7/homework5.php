@@ -9,7 +9,6 @@ This file demonstrates CRUD operations using SQL.
 include("dbconfig.php");
 $db = connectDB();
 
-echo "<h1>Movie Database</h1>";
 
 $sql_create = "CREATE TABLE movies (
 id INT AUTO_INCREMENT PRIMARY KEY,
@@ -20,9 +19,6 @@ director VARCHAR(100),
 release_year INT
 )";
 
-$db->query($sql_create);
-
-echo "<h2>Table Created</h2>";
 
 
 
