@@ -34,7 +34,7 @@ VALUES ('Inception', 9, 148, 'Christopher Nolan', 2010)");
 $db->query("INSERT INTO movies (title, rating, runtime, director, release_year)
 VALUES ('The Matrix', 9, 136, 'Wachowski', 1999)");
 
-
+echo "<h2>All Movies</h2>";
 
 
 
