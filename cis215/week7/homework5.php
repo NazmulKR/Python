@@ -51,4 +51,8 @@ $movies = $result->fetchAll();
 foreach ($movies as $row) {
     echo $row["title"] . "<br>";
 }
+
+$db->query("UPDATE movies
+SET title = 'The Matrix (1999)'
+WHERE id = 5");
 ?>
