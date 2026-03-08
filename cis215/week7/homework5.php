@@ -39,4 +39,8 @@ echo "<h2>All Movies</h2>";
 $result = $db->query("SELECT * FROM movies");
 $movies = $result->fetchAll();
 
+foreach ($movies as $row) {
+    echo $row["title"] . "<br>";
+}
+
 ?>
