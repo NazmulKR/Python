@@ -55,4 +55,12 @@ foreach ($movies as $row) {
 $db->query("UPDATE movies
 SET title = 'The Matrix (1999)'
 WHERE id = 5");
+
+$db->query("DELETE FROM movies WHERE rating < 8");
+
+
+
+
+
+
 ?>
