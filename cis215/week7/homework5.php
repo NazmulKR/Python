@@ -58,6 +58,19 @@ WHERE id = 5");
 
 $db->query("DELETE FROM movies WHERE rating < 8");
 
+echo "<h2>Movies Without Certain Words</h2>";
+
+$result = $db->query("SELECT * FROM movies
+WHERE title NOT LIKE '%the%'
+AND title NOT LIKE '%and%'
+AND title NOT LIKE '% a %'
+AND title NOT LIKE '%an%'");
+
+$movies = $result->fetchAll();
+
+foreach ($movies as $row) {
+    echo $row["title"] . "<br>";
+}
 
 
 
