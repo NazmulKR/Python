@@ -43,4 +43,6 @@ foreach ($movies as $row) {
     echo $row["title"] . "<br>";
 }
 
+echo "<h2>Movies With Rating 9 or Higher</h2>";
+
 ?>
