@@ -36,6 +36,7 @@ VALUES ('The Matrix', 9, 136, 'Wachowski', 1999)");
 
 echo "<h2>All Movies</h2>";
 
-
+$result = $db->query("SELECT * FROM movies");
+$movies = $result->fetchAll();
 
 ?>
