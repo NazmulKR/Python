@@ -10,14 +10,14 @@ include("dbconfig.php");
 $db = connectDB();
 
 
-$sql_create = "CREATE TABLE movies (
-id INT AUTO_INCREMENT PRIMARY KEY,
-title VARCHAR(100),
-rating INT,
-runtime INT,
-director VARCHAR(100),
-release_year INT
-)";
+$db->query("CREATE TABLE IF NOT EXISTS movies (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(100),
+    rating INT,
+    runtime INT,
+    director VARCHAR(100),
+    release_year INT
+)");
 
 $db->query("INSERT INTO movies (title, rating, runtime, director, release_year)
 VALUES ('The Matrix', 9, 136, 'Wachowski', 1999)");
