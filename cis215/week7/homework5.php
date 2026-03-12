@@ -73,10 +73,10 @@ AND title NOT LIKE '%an%'"); //Making nesting array of titles including other da
 $movies = $result->fetchAll();
 
 foreach ($movies as $row) {
-    echo $row["title"] . "<br>"; //Printing only the title of the movies without certain words in the title
+    echo "<ul>";
+    echo "<li>" . $row["title"] . "</li>"; //Printing only the title of the movies without certain words in the title
+    echo "</ul>";
 }
-
-
 
 
 
