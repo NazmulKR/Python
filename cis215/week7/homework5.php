@@ -40,7 +40,9 @@ $result = $db->query("SELECT * FROM movies");
 $movies = $result->fetchAll();
 
 foreach ($movies as $row) {
-    echo $row["title"] . "<br>"; //Printing only the title of the movies
+    echo "<ul>";
+    echo "<li>" . $row["title"] . "</li>"; //Printing only the title of the movies
+    echo "</ul>";
 }
 
 echo "<h2>Movies With Rating 9 or Higher</h2>";
@@ -49,7 +51,9 @@ $result = $db->query("SELECT * FROM movies WHERE rating >= 9"); //Making nesting
 $movies = $result->fetchAll();
 
 foreach ($movies as $row) {
-    echo $row["title"] . "<br>"; //Printing only the title of the movies with rating 9 or higher
+    echo "<ul>";
+    echo "<li>" . $row["title"] . "</li>"; //Printing only the title of the movies with rating 9 or higher
+    echo "</ul>";
 }
 
 $db->query("UPDATE movies 
