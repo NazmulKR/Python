@@ -10,7 +10,9 @@ include("dbconfig.php");
 $db = connectDB();
 
 // Creating Table named movies with columns named title rating runtime director and release_year.
-$db->query("CREATE TABLE  movies (
+
+
+/*$db->query("CREATE TABLE  movies (
     id INT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(100),
     rating INT,
@@ -18,6 +20,7 @@ $db->query("CREATE TABLE  movies (
     director VARCHAR(100),
     release_year INT
 )");
+*/
 //Inserting datas of all of the columns
 $db->query("INSERT INTO movies (title, rating, runtime, director, release_year)
 VALUES ('The Matrix', 9, 136, 'Wachowski', 1999)");
