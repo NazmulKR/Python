@@ -25,4 +25,25 @@ if ($email == "") {
     $errors[] = "Email is required.";
 }
 
+if ($age == "") {
+    $errors[] = "Please select an age range.";
+}
+
+if ($gender == "") {
+    $errors[] = "Please select a gender.";
+}
+
+if ($major == "") {
+    $errors[] = "Major / Program is required.";
+}
+
+if ($hours == "") {
+    $errors[] = "Study Hours Per Week is required.";
+}
+
+if (count($study_methods) == 0) {
+    $errors[] = "Select at least one study method.";
+}
+
+
 ?>
