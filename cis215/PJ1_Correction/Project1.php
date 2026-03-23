@@ -57,6 +57,16 @@
             </select>
         </div>
     </fieldset>
+    <fieldset>
+        <legend>Study Habits</legend>
+        <div>
+            <label for="major">Major / Program:</label>
+                <input type="text" name="major" id="major">
+        </div>
+        <div>
+             <label for="hours_per_week">Study Hours Per Week:</label>
+             <input type="number" name="hours_per_week" id="hours_per_week" min="0" max="168"> 
+        </div>
 
 
 
