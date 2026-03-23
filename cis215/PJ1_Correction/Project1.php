@@ -19,6 +19,17 @@
 <main>
 <h2>Survey Form</h2>
 <form action="process_survey.php" method="post">
+    <fieldset>
+        <legend>Contact and Access</legend>
+        <div>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="survey_password">Enter survey password:</label>
+            <input type="password" id="survey_password" name="survey_password" required>
+        </div>
+    </fieldset>
     
 
 
