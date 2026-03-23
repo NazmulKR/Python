@@ -9,4 +9,10 @@ $major = trim($_POST["major"]);
 $hours = $_POST["hours_per_week"];
 $comments = trim($_POST["comments"]);
 
+if (empty($_POST["study_methods"])) {
+    $study_methods = [];
+} else {
+    $study_methods = $_POST["study_methods"];
+}
+
 ?>
