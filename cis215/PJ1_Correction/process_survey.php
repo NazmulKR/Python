@@ -21,4 +21,8 @@ if (!password_verify($survey_password, $hash_string)) {
     $errors[] = "Incorrect survey password.";
 }
 
+if ($email == "") {
+    $errors[] = "Email is required.";
+}
+
 ?>
