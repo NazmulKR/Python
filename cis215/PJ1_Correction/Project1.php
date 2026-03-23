@@ -46,6 +46,16 @@
                 <label><input type="radio" name="age" value="63-67">63-67</label>
                 <label><input type="radio" name="age" value="68+">68+</label>
         </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="">--Select--</option>
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+                <option value="nb">Non-Binary</option>
+                <option value="o">Other</option>
+            </select>
+        </div>
     </fieldset>
 
 
