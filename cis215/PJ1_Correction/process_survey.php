@@ -45,5 +45,18 @@ if (count($study_methods) == 0) {
     $errors[] = "Select at least one study method.";
 }
 
-
+$major = htmlspecialchars($major);
+$comments = htmlspecialchars($comments);
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Results</title>
+</head>
+<body>
+    
+</body>
+</html>
