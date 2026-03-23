@@ -14,5 +14,11 @@ if (empty($_POST["study_methods"])) {
 } else {
     $study_methods = $_POST["study_methods"];
 }
+$hash_string = '$2y$10$86U6eOu77G6diGRvy42YhuwJyVohlGz6MvB5mamDLgJQSQXmdr3ce';
+$errors = [];
+
+if (!password_verify($survey_password, $hash_string)) {
+    $errors[] = "Incorrect survey password.";
+}
 
 ?>
