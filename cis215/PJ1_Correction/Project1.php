@@ -67,6 +67,20 @@
              <label for="hours_per_week">Study Hours Per Week:</label>
              <input type="number" name="hours_per_week" id="hours_per_week" min="0" max="168"> 
         </div>
+        <div>
+                <p>Study Methods (check any):</p>
+                <label><input type="checkbox" name="study_methods[]" value="reading">Reading textbooks</label>
+                <label><input type="checkbox" name="study_methods[]" value="videos">Watching videos</label>
+                <label><input type="checkbox" name="study_methods[]" value="group">Group study</label>
+                <label><input type="checkbox" name="study_methods[]" value="practice">Practice problems</label>
+                <label><input type="checkbox" name="study_methods[]" value="tutoring">Tutoring / office hours</label>
+            </div>
+
+            <div>
+                <label for="comments">Comments (Optional):</label>
+                <textarea name="comments" id="comments" rows="4" cols="40"></textarea>
+            </div>
+        </fieldset>
 
 
 
