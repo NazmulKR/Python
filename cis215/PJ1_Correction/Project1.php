@@ -16,6 +16,17 @@
         <li><a href="data.php">View Survey Data</a></li>
     </ul>
 </nav>
+<main>
+<h2>Survey Form</h2>
+<form action="process_survey.php" method="post">
+    
+
+
+
+
+
+
+</main>
 
 
 
