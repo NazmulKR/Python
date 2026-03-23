@@ -81,6 +81,7 @@
                 <textarea name="comments" id="comments" rows="4" cols="40"></textarea>
             </div>
         </fieldset>
+        <button type="submit">Submit Survey</button>
 
 
 
