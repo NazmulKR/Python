@@ -47,6 +47,15 @@ if (count($study_methods) == 0) {
 
 $major = htmlspecialchars($major);
 $comments = htmlspecialchars($comments);
+
+$method_string = "";
+$i = 0;
+
+while ($i < count($study_methods)) {
+    $method_string = $method_string . $study_methods[$i] . ",";
+    $i = $i + 1;
+}
+
 ?>
 
 <!DOCTYPE html>
