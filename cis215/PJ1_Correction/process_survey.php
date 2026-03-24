@@ -59,10 +59,8 @@ $comments = htmlspecialchars($comments);
 <body>
 <main>
     <h2>Survey Results</h2>
-   <?php
-
+<?php
 if (count($errors) > 0) {
-
     echo "<h1>Errors</h1>";
     echo "<ul>";
 
@@ -74,9 +72,28 @@ if (count($errors) > 0) {
 
     echo "</ul>";
     echo "<a href='survey.php'>Return to Survey</a>";
-
     exit;
 }
+
+$db = connectDB();
+
+$sql = "INSERT INTO survey_responses
+(email, age_range, gender, major, hours_per_week, study_methods, comments)
+VALUES (
+    '$email',
+    '$age',
+    '$gender',
+    '$major',
+    '$hours',
+    '$method_string',
+    '$comments'
+)";
+
+$db->query($sql);
+
+echo "<h1>Survey Submitted</h1>";
+echo "<a href='survey.php'>Submit Again</a><br>";
+echo "<a href='data.php'>View Data</a>";   
 ?>
 </main>
 </body>
