@@ -57,6 +57,27 @@ $comments = htmlspecialchars($comments);
     <title>Survey Results</title>
 </head>
 <body>
-    
+<main>
+    <h2>Survey Results</h2>
+   <?php
+
+if (count($errors) > 0) {
+
+    echo "<h1>Errors</h1>";
+    echo "<ul>";
+
+    $i = 0;
+    while ($i < count($errors)) {
+        echo "<li>" . htmlspecialchars($errors[$i]) . "</li>";
+        $i = $i + 1;
+    }
+
+    echo "</ul>";
+    echo "<a href='survey.php'>Return to Survey</a>";
+
+    exit;
+}
+?>
+</main>
 </body>
 </html>
