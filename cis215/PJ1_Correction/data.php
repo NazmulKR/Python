@@ -30,8 +30,10 @@ $stmt = $db->query($sql);
             echo "<li>Methods: " .($row["study_methods"]) . "</li>";
             echo "<li>Comments: " .($row["comments"]) . "</li>";
             echo "</ul>";
+             $row = $stmt->fetch() ;
             
         }
+         
                 
          ?>
 
