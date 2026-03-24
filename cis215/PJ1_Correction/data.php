@@ -2,7 +2,8 @@
 include "dbconfig.php";
 
 $db = connectDB();
-
+$sql = "SELECT * FROM survey_responses";
+$stmt = $db->query($sql);
 
 ?>
 
