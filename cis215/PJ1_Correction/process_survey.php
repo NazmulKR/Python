@@ -9,11 +9,7 @@ $major = trim($_POST["major"]);
 $hours = $_POST["hours_per_week"];
 $comments = trim($_POST["comments"]);
 
-if (empty($_POST["study_methods"])) {
-    $study_methods = [];
-} else {
-    $study_methods = $_POST["study_methods"];
-}
+
 
 $hash_string = '$2y$10$86U6eOu77G6diGRvy42YhuwJyVohlGz6MvB5mamDLgJQSQXmdr3ce';
 $errors = [];
@@ -52,13 +48,7 @@ $comments = htmlspecialchars($comments);
 
 
 
-$method_string = "";
-$i = 0;
 
-while ($i < count($study_methods)) {
-    $method_string = $method_string . $study_methods[$i] . ",";
-    $i = $i + 1;
-}
 
 ?>
 
