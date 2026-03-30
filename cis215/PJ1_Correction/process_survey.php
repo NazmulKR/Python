@@ -1,8 +1,8 @@
 <?php
 include "dbconfig.php";
 
-$survey_password = $_POST["survey_password"];
-$email = trim($_POST["email"]);
+$survey_password = $_POST["pw-name"];
+$email = trim($_POST["email-name"]);
 $age = $_POST["age"];
 $gender = $_POST["gender"];
 $major = trim($_POST["major"]);
