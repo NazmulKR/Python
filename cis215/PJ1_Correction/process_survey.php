@@ -38,9 +38,7 @@ if ($hours == "") {
     $errors[] = "Study Hours Per Week is required.";
 }
 
-if (count($study_methods) == 0) {
-    $errors[] = "Select at least one study method.";
-}
+
 
 
 $major = htmlspecialchars($major);
@@ -81,9 +79,9 @@ if (count($errors) > 0) {
 $db = connectDB();
 
 $sql = "INSERT INTO survey_responses
-(email, age_range, gender, major, hours_per_week, study_methods, comments)
+(email, age_range, gender, major, hours_per_week, comments)
 VALUES
-(:email, :age, :gender, :major, :hours, :study_methods, :comments)";
+(:email, :age, :gender, :major, :hours, :comments)";
 
 $stmt = $db->prepare($sql);
 
@@ -93,7 +91,6 @@ $stmt->execute([
     ':gender' => $gender,
     ':major' => $major,
     ':hours' => $hours,
-    ':study_methods' => $method_string,
     ':comments' => $comments
 ]);
 
