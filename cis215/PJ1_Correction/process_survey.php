@@ -14,6 +14,7 @@ if (empty($_POST["study_methods"])) {
 } else {
     $study_methods = $_POST["study_methods"];
 }
+
 $hash_string = '$2y$10$86U6eOu77G6diGRvy42YhuwJyVohlGz6MvB5mamDLgJQSQXmdr3ce';
 $errors = [];
 
@@ -45,8 +46,6 @@ if (count($study_methods) == 0) {
     $errors[] = "Select at least one study method.";
 }
 
-$major = htmlspecialchars($major);
-$comments = htmlspecialchars($comments);
 
 $method_string = "";
 $i = 0;
