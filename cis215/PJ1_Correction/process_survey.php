@@ -47,6 +47,11 @@ if (count($study_methods) == 0) {
 }
 
 
+$major = htmlspecialchars($major);
+$comments = htmlspecialchars($comments);
+
+
+
 $method_string = "";
 $i = 0;
 
@@ -87,17 +92,21 @@ $db = connectDB();
 
 $sql = "INSERT INTO survey_responses
 (email, age_range, gender, major, hours_per_week, study_methods, comments)
-VALUES (
-    '$email',
-    '$age',
-    '$gender',
-    '$major',
-    '$hours',
-    '$method_string',
-    '$comments'
-)";
+VALUES
+(:email, :age, :gender, :major, :hours, :study_methods, :comments)";
 
-$db->query($sql);
+$stmt = $db->prepare($sql);
+
+$stmt->execute([
+    ':email' => $email,
+    ':age' => $age,
+    ':gender' => $gender,
+    ':major' => $major,
+    ':hours' => $hours,
+    ':study_methods' => $method_string,
+    ':comments' => $comments
+]);
+
 
 echo "<h1>Survey Submitted</h1>";
 echo "<a href='survey.php'>Submit Again</a><br>";
