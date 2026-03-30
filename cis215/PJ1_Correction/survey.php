@@ -1,8 +1,21 @@
 <!DOCTYPE html>
-<html><head>
-<title>Survey: Survey Name</title>  <!-- TODO: Change "Survey Name" to the topic of your survey -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey: Student Study Habits</title>
 </head>
 <body>
+
+<header>
+    <h1>Student Study Habits Survey</h1>
+</header>
+
+<nav>
+        <ul>
+            <li><a href="survey.php">Survey Form</a></li>
+            <li><a href="data.php">View Survey Data</a></li>
+        </ul>
+    </nav>
 
 
 <!-- TODO: Fix all bugs/poor practice in the form -->
