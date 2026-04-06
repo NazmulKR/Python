@@ -49,11 +49,15 @@ function even_while(n) {
  */
 
 function divisible_for() {
-    for ($i = 1; $i <= 30; $i++) {
-        if ($i % 2 == 0 || $i % 3 == 0) {
-            echo $i . " ";
+    let output = "";
+
+    for (let i = 1; i <= 30; i++) {
+        if (i % 2 == 0 || i % 3 == 0) {
+            output += i + " ";
         }
     }
+
+    return output;
 }
 // For is better because range is fixed.
 
