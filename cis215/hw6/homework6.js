@@ -1,6 +1,6 @@
 
 /*
-Homework 3 - Practicing PHP
+Homework 6
 Author: Nazmul Kabir
 Email: nrahive@genesee.edu
 
@@ -78,59 +78,83 @@ function divisible_while() {
 
 
 /* ARRAYS SECTION
-   New array function: array_sum
+   New array function: join
  */
 
 /*
-array_sum adds all numbers in an array.
+join puts array values together into one string.
 */
 
 function sum_example() {
-    $numbers = [5, 10, 15, 20];
-    return array_sum($numbers);
+    let numbers = [5, 10, 15, 20];
+    return numbers.join(" ");
 }
-
 
 /* EXTRA FUNCTION
    Reverse a string 
  */
 
-function reverse_string($text) {
-    $result = "";
+function reverse_string(text) {
+    let result = "";
 
-    for ($i = strlen($text) - 1; $i >= 0; $i--) {
-        $result .= $text[$i];
+    for (let i = text.length - 1; i >= 0; i--) {
+        result += text[i];
     }
 
-    return $result;
+    return result;
 }
 
-function fizzbuzz($n) {
+function fizzbuzz(n) {
+    let output = "";
 
-    for ($i = 1; $i <= $n; $i++) {
+    for (let i = 1; i <= n; i++) {
 
         // Check multiples of 3 AND 5 first
-        if ($i % 3 == 0 && $i % 5 == 0) {
-            echo "FizzBuzz ";
+        if (i % 3 == 0 && i % 5 == 0) {
+            output += "FizzBuzz ";
         }
 
         // Multiple of 3
-        elseif ($i % 3 == 0) {
-            echo "Fizz ";
+        else if (i % 3 == 0) {
+            output += "Fizz ";
         }
 
         // Multiple of 5
-        elseif ($i % 5 == 0) {
-            echo "Buzz ";
+        else if (i % 5 == 0) {
+            output += "Buzz ";
         }
 
         // Otherwise just print the number
         else {
-            echo $i . " ";
+            output += i + " ";
         }
     }
+
+    return output;
 }
 
 
+console.log("Loop Task 1: Even Numbers");
+console.log("Using FOR loop:");
+console.log(even_for(20));
 
+console.log("Using WHILE loop:");
+console.log(even_while(20));
 
+console.log("Loop Task 2: Divisible by 2 or 3");
+console.log("Using FOR loop:");
+console.log(divisible_for());
+
+console.log("Using WHILE loop:");
+console.log(divisible_while());
+
+console.log("Array Function Example");
+console.log("Using join on [5, 10, 15, 20]:");
+console.log(sum_example());
+
+console.log("Reverse String Function");
+console.log("Original: Hello");
+console.log("Reversed: " + reverse_string("Hello"));
+
+console.log("FizzBuzz Output (1 to 30)");
+console.log(fizzbuzz(30));
