@@ -62,14 +62,17 @@ function divisible_for() {
 // For is better because range is fixed.
 
 function divisible_while() {
-    $i = 1;
+    let i = 1;
+    let output = "";
 
-    while ($i <= 30) {
-        if ($i % 2 == 0 || $i % 3 == 0) {
-            echo $i . " ";
+    while (i <= 30) {
+        if (i % 2 == 0 || i % 3 == 0) {
+            output += i + " ";
         }
-        $i++;
+        i++;
     }
+
+    return output;
 }
 // While works but for is simpler.
 
