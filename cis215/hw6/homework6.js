@@ -28,18 +28,18 @@ function even_for(n) {
 }
 // For loop is better because we know start and end.
 
-function even_while($n) {
-    $evens = [];
-    $i = 1;
+function even_while(n) {
+    let evens = [];
+    let i = 1;
 
-    while ($i <= $n) {
-        if ($i % 2 == 0) {
-            $evens[] = $i;
+    while (i <= n) {
+        if (i % 2 == 0) {
+            evens.push(i);
         }
-        $i++;
+        i++;
     }
 
-    return $evens;
+    return evens;
 }
 // While works, but for is cleaner here.
 
